@@ -2,6 +2,7 @@
     --primary: #458ff6;
     --primary-010: #3b78cd;
     --white: #fff;
+    --white-010: #f6f5f5;
     --black-font: #233348;
 
     --gradient-blue-primary: #97c3f9;
@@ -15,120 +16,13 @@ body {
     flex-direction: column;
 }
 
-.icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    width: 160px;
-}
-
-.icon .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--primary);
-    color: var(--white);
-
-    min-width: 41px;
-    min-height: 41px;
-    border-radius: 100%;
-    font-size: 26px;
-}
-
-.icon span {
-    font-size: 24px;
-    color: var(--black-font);
-}
-
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-nav li {
-    padding: 1rem;
-}
-
-nav {
-    display: flex;
-    align-items: flex-end;
-}
-
-nav a {
-    min-width: 100px;
-    text-decoration: none;
-    color: var(--black-font);
-}
-
-.decoration {
-    max-width: 10%;
-    margin-right: 5%;
-}
-
-.apresentation-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-}
-
-.lateral-decoration {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    opacity: 50%;
-    width: 100px;
-    height: 120px;
-}
-
-.lateral-decoration li {
-    background: var(--gradient-blue-primary);
-    border-radius: 100%;
-    margin: 0.5rem;
-    width: 15px;
-    height: 15px;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 450px;
-    height: 350px;
-}
-
-.header-text h1 {
-    font-size: 48px;
-}
-
-.header-text p {
-    font-size: 21px;
-}
-
-.btn-primary {
+.btn {
     padding: 20px;
     font-size: 21px;
     border-radius: 50px;
+}
+
+.btn-primary {
     border: none;
     background: var(--primary);
     color: var(--white);
@@ -136,4 +30,14 @@ nav a {
 
 .btn-primary:hover {
     background: var(--primary-010);
+}
+
+.btn-secondary {
+    border: 2px solid var(--primary);
+    background: var(--white);
+    color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--white-010);
 }
