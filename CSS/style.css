@@ -3,7 +3,11 @@
     --primary-010: #3b78cd;
     --white: #fff;
     --white-010: #f6f5f5;
-    --black-font: #233348;
+
+    --black-font: #000000;
+    --black-font-a: #233348;
+
+    --font-p: #7d7987;
 
     --gradient-blue-primary: #97c3f9;
     --gradient-blue-secondary: #93c1f9;
@@ -14,6 +18,11 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
+    color: var(--black-font);
+}
+
+p {
+    color: var(--font-p);
 }
 
 .btn {
