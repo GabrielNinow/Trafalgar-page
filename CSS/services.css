@@ -2,6 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15vh;
 }
 
 .service-title {
@@ -11,17 +12,28 @@ main {
 
     justify-content: center;
     align-items: center;
+    margin-bottom: 5vh;
 }
 
 .service-title h2 {
     font-size: 36px;
     padding: 1rem;
-    border-bottom: 1px solid var(--black-font);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-title .border-bottom {
+    border-bottom: 3px solid var(--black-font);
+    width: 50px;
+    height: 20px;
 }
 
 .service-title p {
-    width: 50%;
+    width: 70%;
     font-size: 20px;
+    text-align: center;
 }
 
 .card-group {
@@ -30,6 +42,7 @@ main {
     flex-wrap: wrap;
 
     width: 1150px;
+    margin-bottom: 5vh;
 }
 
 #bg-service {
@@ -46,7 +59,7 @@ main {
 
 .card {
     width: 350px;
-    height: 350px;
+    height: 360px;
     border-radius: 50px;
     margin: 1rem;
 

@@ -107,3 +107,7 @@ nav a {
 .header-text p {
     font-size: 21px;
 }
+
+.services-content {
+    margin-bottom: 15vh;
+}
