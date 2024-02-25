@@ -5,6 +5,17 @@ main {
     margin-top: 15vh;
 }
 
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
 .service-title {
     width: 100%;
     display: flex;
