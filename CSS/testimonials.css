@@ -13,6 +13,13 @@
     border-radius: 50%;
 }
 
+.testimonials .border-bottom {
+    border-bottom: 3px solid var(--white);
+    width: 50px;
+    height: 20px;
+}
+
+
 .testimonials-content h2,
 .testimonials-content h3,
 .testimonials-content p {

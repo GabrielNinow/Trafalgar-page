@@ -1,0 +1,74 @@
+/* <div class="article">
+    <img src="" alt="">
+    <h3>Natural care for healthy
+        facial skin</h3>
+    <p>A healthy lifestyle should start from now and also for your skin health.
+        There are some...</p>
+    <button class="more">Read more <img src="src/icon/right-arrow.svg" alt="right arrow"></button>
+</div> */
+
+.articles-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.border-bottom {
+    border-bottom: 3px solid var(--black-font);
+    width: 50px;
+    height: 20px;
+}
+
+.articles h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding-bottom: 2rem;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 1rem;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+}
+
+.article h3,
+.article p,
+.article button {
+    width: 80%;
+}
+
+.article button {
+    color: var(--primary);
+    background: var(--white);
+    border: none;
+    text-align: initial;
+}
+
+.article button:hover {
+    opacity: 80%;
+}
+
+.article:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-device-width: 1200px) {
+    .article-group {
+        flex-direction: column;
+    }
+}
