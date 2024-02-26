@@ -1,14 +1,10 @@
 .providers-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin-bottom: 50px;
     justify-content: space-around;
-    margin-bottom: 15vh;
     width: 80%;
-}
-
-.providers-text h2 {
-    font-size: 36px;
+    max-width: 1200px;
 }
 
 .providers-text p {
@@ -17,11 +13,8 @@
 }
 
 .providers-text {
-    width: 450px;
-    height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-around;
 }
 
@@ -29,4 +22,26 @@
     border-bottom: 3px solid var(--black-font);
     width: 50px;
     height: 20px;
+}
+
+@media only screen and (max-device-width: 700px) {
+    .providers-content {
+        flex-direction: column;
+    }
+
+    .providers-text {
+        align-items: center;
+    }
+
+    .providers-text h2 {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-device-width: 700px) {
+    .providers-text {
+        align-items: flex-start;
+        margin-left: 100px;
+    }
 }

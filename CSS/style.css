@@ -18,24 +18,44 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     color: var(--black-font);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
 p {
     color: var(--font-p);
 }
 
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
 .container {
     width: 80%;
-    max-width: 1500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .decoration {
     position: absolute;
-    align-items: center;
 }
 
 .btn {
@@ -63,4 +83,25 @@ p {
 
 .btn-secondary:hover {
     background: var(--white-010);
+}
+
+@media only screen and (max-device-width: 700px) {
+    .banner img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
 }

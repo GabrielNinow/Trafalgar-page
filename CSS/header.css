@@ -55,59 +55,8 @@ nav a {
     color: var(--black-font);
 }
 
-.decoration {
-    max-width: 10%;
-    margin-right: 5%;
-}
-
-.apresentation-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-}
-
-.lateral-decoration {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    opacity: 50%;
-    width: 100px;
-    height: 120px;
-}
-
-.lateral-decoration li {
-    background: var(--gradient-blue-primary);
-    border-radius: 100%;
-    margin: 0.5rem;
-    width: 15px;
-    height: 15px;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 450px;
-    height: 350px;
-}
-
-.header-text h1 {
-    font-size: 48px;
-}
-
-.header-text p {
-    font-size: 21px;
-}
-
-.services-content {
-    margin-bottom: 15vh;
+@media only screen and (max-device-width: 700px) {
+    nav {
+        display: none;
+    }
 }

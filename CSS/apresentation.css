@@ -1,0 +1,37 @@
+.apresentation-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lateral-decoration li {
+    background: var(--gradient-blue-primary);
+    border-radius: 100%;
+    margin: 0.5rem;
+    width: 15px;
+    height: 15px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.header-text p {
+    font-size: 21px;
+}
+
+@media only screen and (max-device-width: 700px) {
+    .apresentation-card {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-device-width: 700px) {
+    .header-text {
+        margin-right: 50px;
+    }
+}
