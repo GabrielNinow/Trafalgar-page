@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+#apresentation{
+    width: 80%;
+}
+
 .lateral-decoration li {
     background: var(--gradient-blue-primary);
     border-radius: 100%;

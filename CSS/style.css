@@ -42,7 +42,7 @@ h2 {
 }
 
 section {
-    width: 80%;
+    width: 100%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -54,6 +54,11 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    min-width: 50%;
+}
+
+.banner img{
+    max-width: 100%;
 }
 
 .decoration {
